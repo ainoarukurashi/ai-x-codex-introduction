@@ -36,11 +36,13 @@ Codex.appをApplicationsフォルダへドラッグしてください。
 
 ![CodexをApplicationsへ移動](assets/codex-setup-guide-mac/02-drag-to-applications.png)
 
+## 3. Codexが入ったことを確認する
+
 ApplicationsフォルダにCodex.appが入っていればインストール完了です。
 
 ![Applications内のCodex.app](assets/codex-setup-guide-mac/03-applications-codex.png)
 
-## 3. Codexを開いてサインインする
+## 4. Codexを開き、ChatGPTアカウントでサインインする
 
 ApplicationsフォルダからCodexを開きます。
 
@@ -48,13 +50,15 @@ ApplicationsフォルダからCodexを開きます。
 
 アカウント選択や確認画面が表示された場合は、講座で使うChatGPTアカウントを選んで進めます。
 
-## 4. 練習用フォルダを作る
+![CodexのChatGPTサインイン画面](assets/codex-setup-guide-mac/05-chatgpt-signin.png)
+
+## 5. 練習用フォルダを作る
 
 デスクトップに練習用フォルダを作ります。
 
 フォルダ名は `AI-X` にしてください。
 
-## 5. Codexでプロジェクトを選ぶ
+## 6. Codexでプロジェクトを選ぶ
 
 Codexを開くと、最初に「何に取り組みますか？」という画面が表示されます。
 
@@ -62,7 +66,7 @@ Codexを開くと、最初に「何に取り組みますか？」という画面
 
 ![Codexの初期画面](assets/codex-setup-guide-mac/04-codex-home.png)
 
-## 6. 最初の依頼を送る
+## 7. 最初の依頼を送る
 
 まずは、次のように入力して送ってみます。
 
@@ -76,7 +80,7 @@ Codexがフォルダの中身を確認して返答すれば成功です。
 
 ![Codexの返答を確認する](assets/codex-setup-guide-mac/07-first-result.png)
 
-## 7. ファイル作成を試す
+## 8. ファイル作成を試す
 
 次に、ファイル作成を頼んでみます。
 
