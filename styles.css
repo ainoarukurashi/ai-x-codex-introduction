@@ -394,6 +394,124 @@ code {
   color: var(--muted);
 }
 
+.detail-link-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 20px;
+}
+
+.detail-link-panel h3 {
+  margin-top: 0;
+}
+
+.detail-hero {
+  background:
+    linear-gradient(180deg, rgba(238, 244, 255, 0.95), rgba(247, 251, 248, 1)),
+    var(--bg);
+}
+
+.detail-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.detail-visual {
+  box-shadow: var(--shadow);
+}
+
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.quick-band {
+  background: var(--surface);
+  border-block: 1px solid var(--line);
+}
+
+.quick-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.quick-steps.two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.quick-steps article,
+.issue-copy {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 20px;
+}
+
+.status-pill {
+  display: inline-flex;
+  min-width: 34px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #dff6ef;
+  color: #0f766e;
+  font-size: 0.86rem;
+  font-weight: 900;
+  padding: 0 10px;
+}
+
+.issue-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.issue-copy h3 {
+  margin-top: 0;
+}
+
+.issue-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.issue-grid h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.solution-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.solution-list li + li {
+  margin-top: 8px;
+}
+
+.soft-note {
+  border-left: 4px solid #0f766e;
+  border-radius: 4px;
+  background: #eefaf6;
+  color: var(--text);
+  margin-top: 18px;
+  padding: 12px 14px;
+}
+
 .checklist {
   display: grid;
   gap: 10px;
@@ -468,12 +586,20 @@ code {
   .intro-grid,
   .two-column,
   .checklist-grid,
+  .detail-hero-grid,
+  .issue-block,
   .step {
     grid-template-columns: 1fr;
   }
 
   .trouble-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quick-steps,
+  .quick-steps.two-up,
+  .issue-grid {
+    grid-template-columns: 1fr;
   }
 
   .section-band,
@@ -498,6 +624,11 @@ code {
 
   .action-row a {
     width: 100%;
+  }
+
+  .detail-link-panel {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .trouble-grid {

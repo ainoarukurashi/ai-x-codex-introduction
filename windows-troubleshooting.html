@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Windows版 Codex トラブルシューティング | AI-X</title>
+    <meta
+      name="description"
+      content="AI-X講座の受講者向けに、Windows版Codexデスクトップアプリで起きやすいエラーと対処方法を画像付きでまとめています。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./index.html#top" aria-label="AI-X Codexセットアップガイドへ戻る">
+          <span class="brand-mark">AI-X</span>
+          <span>Windowsトラブル対応</span>
+        </a>
+        <nav class="top-nav" aria-label="ページ内ナビゲーション">
+          <a href="./index.html">準備ガイド</a>
+          <a href="#sandbox">サンドボックス</a>
+          <a href="#start">起動エラー</a>
+          <a href="#store">Storeエラー</a>
+          <a href="#share">共有するもの</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="detail-hero section-band">
+        <div class="section-inner detail-hero-grid">
+          <div>
+            <p class="eyebrow">Windows版で困った時</p>
+            <h1>エラー画面を見ながら、落ち着いて確認しましょう</h1>
+            <p class="lead">
+              Codexの初回起動やアップデート直後は、Windowsの権限・セキュリティ設定・Storeの状態によって止まることがあります。
+              まずはエラー画面をスクリーンショットで残し、下の再現画像に近いものを探してください。
+            </p>
+            <div class="page-actions">
+              <a class="primary-button" href="#sandbox">症状から探す</a>
+              <a class="secondary-button" href="./index.html#windows">Windowsセットアップへ戻る</a>
+            </div>
+          </div>
+          <figure class="detail-visual">
+            <img
+              src="./assets/windows-troubleshooting/sandbox-dependency-repair.png"
+              alt="Workspace dependency repair failed の再現画面"
+              loading="eager"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-band quick-band">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">最初にやること</p>
+            <h2>いきなり難しい設定を触らなくて大丈夫です</h2>
+            <p>まずは安全な確認から進めます。会社や学校のPCでは、管理者権限が必要な場合があります。</p>
+          </div>
+          <div class="quick-steps">
+            <article>
+              <span class="status-pill">1</span>
+              <h3>エラー画面を撮る</h3>
+              <p>画面全体のスクリーンショットを残します。文字が読める状態だと確認しやすいです。</p>
+            </article>
+            <article>
+              <span class="status-pill">2</span>
+              <h3>Codexを再起動する</h3>
+              <p>一度閉じてから、もう一度Codexを開きます。更新直後の一時的な不具合なら直ることがあります。</p>
+            </article>
+            <article>
+              <span class="status-pill">3</span>
+              <h3>PCを再起動する</h3>
+              <p>Windows UpdateやStore更新が残っている場合、PC再起動で状態が整うことがあります。</p>
+            </article>
+            <article>
+              <span class="status-pill">4</span>
+              <h3>まだ直らなければ共有</h3>
+              <p>下の「共有するもの」をそろえて、講座前に相談してください。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="sandbox">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">ケース1</p>
+            <h2>サンドボックス関連エラー</h2>
+            <p>「workspace dependency repair」「sandbox setup failed」のような表示が出る場合です。</p>
+          </div>
+
+          <article class="issue-block">
+            <figure>
+              <img
+                src="./assets/windows-troubleshooting/sandbox-dependency-repair.png"
+                alt="workspace dependency repair failed の再現画像"
+                loading="lazy"
+              />
+            </figure>
+            <div class="issue-copy">
+              <h3>見分けるポイント</h3>
+              <p>Codexが作業用の安全な環境を準備できず、依存関係の修復やサンドボックス作成で止まっている状態です。</p>
+              <div class="issue-grid">
+                <div>
+                  <h4>考えられる原因</h4>
+                  <ul class="solution-list">
+                    <li>Microsoft Visual C++ Redistributableが入っていない</li>
+                    <li>Visual Studio Build ToolsのC++関連機能が不足している</li>
+                    <li>Windowsの権限やセキュリティ設定で止まっている</li>
+                    <li>Windows 10で一部機能がうまく動かない</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>対処の順番</h4>
+                  <ol class="solution-list">
+                    <li>Codexを閉じて、PCを再起動します。</li>
+                    <li>Microsoft Visual C++ Redistributable (x64) をインストールします。</li>
+                    <li>必要に応じてVisual Studio Build ToolsのC++ワークロードを入れます。</li>
+                    <li>Codexの設定でSandboxモードを切り替えられる場合は、別のモードで試します。</li>
+                  </ol>
+                </div>
+              </div>
+              <p class="soft-note">
+                設定ファイルを直接編集する場合、Windowsでは <code>C:\Users\ユーザー名\.codex\config.toml</code> を扱います。
+                初心者の方は無理に編集せず、まずスクリーンショットを共有してください。
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section-alt" id="start">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">ケース2</p>
+            <h2>起動時に「Codex failed to start」と出る</h2>
+            <p><code>.codex</code> フォルダを作れない、または読み書きできない時に起きることがあります。</p>
+          </div>
+
+          <article class="issue-block">
+            <figure>
+              <img
+                src="./assets/windows-troubleshooting/codex-failed-to-start-eperm.png"
+                alt="Codex failed to start EPERM の再現画像"
+                loading="lazy"
+              />
+            </figure>
+            <div class="issue-copy">
+              <h3>見分けるポイント</h3>
+              <p><code>EPERM: operation not permitted</code> や <code>.codex\sqlite</code> のような文字が表示されます。</p>
+              <div class="issue-grid">
+                <div>
+                  <h4>考えられる原因</h4>
+                  <ul class="solution-list">
+                    <li>ユーザー名に日本語や特殊文字が含まれている</li>
+                    <li><code>.codex</code> フォルダへの権限が足りない</li>
+                    <li>企業管理PCの制限がある</li>
+                    <li>アンチウイルスやセキュリティソフトが止めている</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>対処の順番</h4>
+                  <ol class="solution-list">
+                    <li>Codexを右クリックして「管理者として実行」を試します。</li>
+                    <li><code>%USERPROFILE%\.codex</code> を <code>.codex_backup</code> などに名前変更してから再起動します。</li>
+                    <li>会社や学校のPCなら、管理者にアプリ利用の許可を確認します。</li>
+                    <li>特殊文字が原因らしい場合は、新しいWindowsユーザーで試す方法もあります。</li>
+                  </ol>
+                </div>
+              </div>
+              <p class="soft-note">
+                <code>.codex</code> フォルダを削除・リネームする前に、必要そうなファイルがないかだけ確認してください。
+                不安な場合はスクリーンショットを共有してから進めましょう。
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="store">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">ケース3</p>
+            <h2>Microsoft Storeの「不明なエラー」</h2>
+            <p>インストール前に止まる場合は、CodexではなくStore側の状態が原因のことがあります。</p>
+          </div>
+
+          <article class="issue-block">
+            <figure>
+              <img
+                src="./assets/windows-troubleshooting/store-unknown-error.png"
+                alt="Microsoft Store unknown error の再現画像"
+                loading="lazy"
+              />
+            </figure>
+            <div class="issue-copy">
+              <h3>見分けるポイント</h3>
+              <p>Store画面で「Unknown Error」「Something happened on our end」のように表示され、インストールが始まりません。</p>
+              <div class="issue-grid">
+                <div>
+                  <h4>考えられる原因</h4>
+                  <ul class="solution-list">
+                    <li>Microsoft Storeのキャッシュが壊れている</li>
+                    <li>Windows Updateが残っている</li>
+                    <li>ネットワークが一時的に不安定</li>
+                    <li>Microsoft Store側の一時的な不具合</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>対処の順番</h4>
+                  <ol class="solution-list">
+                    <li>Storeアプリを閉じて、もう一度開きます。</li>
+                    <li>Windows Updateを確認し、必要ならPCを再起動します。</li>
+                    <li><code>wsreset.exe</code> を実行してStoreのキャッシュをクリアします。</li>
+                    <li>時間を置いて、公式ダウンロードページからもう一度試します。</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section-alt" id="permission">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">ケース4</p>
+            <h2>権限・Firewall・WindowsApps関連のエラー</h2>
+            <p>Windowsの保護機能や会社PCの制限で、Codexの動作が止まることがあります。</p>
+          </div>
+
+          <article class="issue-block">
+            <figure>
+              <img
+                src="./assets/windows-troubleshooting/permission-network-blocked.png"
+                alt="Permission or network access blocked の再現画像"
+                loading="lazy"
+              />
+            </figure>
+            <div class="issue-copy">
+              <h3>見分けるポイント</h3>
+              <p><code>WindowsApps</code>、<code>Access denied</code>、<code>Firewall</code>、<code>ACL</code> のような文字が出る場合です。</p>
+              <div class="issue-grid">
+                <div>
+                  <h4>考えられる原因</h4>
+                  <ul class="solution-list">
+                    <li>WindowsAppsフォルダへのアクセス制限</li>
+                    <li>Firewallやセキュリティソフトによる通信ブロック</li>
+                    <li>管理者権限が必要なPC設定</li>
+                    <li>アップデート直後に設定がずれた</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>対処の順番</h4>
+                  <ol class="solution-list">
+                    <li>Codexを再起動し、必要ならPCも再起動します。</li>
+                    <li>Windows セキュリティやFirewallでCodexがブロックされていないか確認します。</li>
+                    <li>Codexを一度アンインストールし、再インストールします。</li>
+                    <li>会社PCの場合は、管理者にアプリ利用と通信許可を確認してください。</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band quick-band">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">補足</p>
+            <h2>アップデート後・CLI併用時の注意</h2>
+            <p>講座ではCodexデスクトップアプリを使うため、CLIのセットアップは必須ではありません。</p>
+          </div>
+          <div class="quick-steps two-up">
+            <article>
+              <span class="status-pill">更新後</span>
+              <h3>更新直後に壊れたように見える</h3>
+              <p>
+                Codexのアップデート直後に起動しない場合は、Codexを閉じてPCを再起動します。
+                それでも直らない時は、<code>%USERPROFILE%\.codex</code> をバックアップ名に変更してから再起動すると改善することがあります。
+              </p>
+            </article>
+            <article>
+              <span class="status-pill">CLI</span>
+              <h3>CLIを使っている人だけ</h3>
+              <p>
+                <code>npm install -g @openai/codex</code> でPermissionエラーが出る場合は、PowerShellの管理者実行やPATH設定が関係します。
+                今回の講座ではCLIは使わないため、無理に進めなくて大丈夫です。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band note-band" id="share">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">講座前に共有するもの</p>
+            <h2>ここまで分かれば十分です</h2>
+            <ul class="plain-list">
+              <li>Windowsのバージョン（Windows 10 / Windows 11）</li>
+              <li>エラー画面のスクリーンショット</li>
+              <li>止まった手順（インストール / サインイン / フォルダ選択 / 起動時など）</li>
+              <li>表示されたエラーメッセージ</li>
+              <li>会社PC・学校PCか、自分のPCか</li>
+            </ul>
+          </div>
+          <div>
+            <p class="eyebrow">大事なこと</p>
+            <h2>分からなくても止まらなくて大丈夫</h2>
+            <p>
+              ここに出てくる言葉は少し難しく見えますが、受講者の方が全部理解する必要はありません。
+              エラー画面を残しておけば、どこで止まっているかを一緒に確認できます。
+            </p>
+            <div class="page-actions">
+              <a class="primary-button" href="./index.html#windows">Windowsセットアップへ戻る</a>
+              <a class="secondary-button" href="#top">ページ上部へ戻る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <span>AI-X Codexデスクトップ事前準備</span>
+        <a href="https://willforward.co.jp/" target="_blank" rel="noreferrer">株式会社ウィルフォワード</a>
+        <a href="./index.html">準備ガイドへ戻る</a>
+      </div>
+    </footer>
+  </body>
+</html>
