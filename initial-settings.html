@@ -160,7 +160,13 @@
                 <span class="status-pill">2</span>
                 <h3>構成</h3>
                 <p>承認ポリシーとサンドボックス設定を確認します。初心者の方は、Codexが確認を求める設定のままにしておくと安心です。</p>
-                <p><code>On request</code> は、必要な時にCodexが確認を求める設定です。最初はこれがおすすめです。</p>
+                <p>承認ポリシーは、Codexが作業前に確認を求めるタイミングを決める設定です。</p>
+                <ul class="plain-list">
+                  <li><code>Untrusted</code>：毎回確認します。いちばん慎重ですが、確認回数は多くなります。</li>
+                  <li><code>On failure</code>：コマンドが失敗した時だけ確認します。</li>
+                  <li><code>On request</code>：Codexが追加の許可が必要だと判断した時に確認します。最初はこれがおすすめです。</li>
+                  <li><code>Never</code>：確認せずに実行します。初心者の方は選ばなくて大丈夫です。</li>
+                </ul>
                 <p><code>Read only</code> は、コマンド実行時に読み取り中心で動かす安全寄りの設定です。まずはこのままで大丈夫です。</p>
                 <p class="soft-note"><code>Workspace write</code> や <code>Full access</code> のような広い権限は、必要になってから確認しながら使いましょう。</p>
               </div>
