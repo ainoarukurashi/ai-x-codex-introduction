@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI-X講座 Codexデスクトップ事前準備</title>
+    <meta
+      name="description"
+      content="AI-X講座に参加する方向けのCodexデスクトップ事前準備ガイド。Mac版・Windows版のセットアップ手順と動作確認をまとめています。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="AI-X Codexセットアップガイドの先頭へ">
+          <span class="brand-mark">AI-X</span>
+          <span>Codex事前準備</span>
+        </a>
+        <nav class="top-nav" aria-label="ページ内ナビゲーション">
+          <a href="#overview">準備すること</a>
+          <a href="#mac">Mac版</a>
+          <a href="#windows">Windows版</a>
+          <a href="#windows-trouble">困った時</a>
+          <a href="#checklist">チェック</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="intro section-band" id="overview">
+        <div class="section-inner intro-grid">
+          <div class="intro-copy">
+            <p class="eyebrow">AI-X講座にお申し込みの皆様へ</p>
+            <h1>Codexデスクトップアプリを事前に準備してください</h1>
+            <p class="lead">
+              講座当日はCodexの画面を使って進めます。ChatGPTにログインできる状態にして、MacまたはWindowsにCodexデスクトップアプリをインストールし、練習用フォルダで動作確認まで済ませておいてください。
+            </p>
+            <p class="lead secondary-lead">
+              Claude Codeとの違いとして、Codexの画面から画像生成の相談や作成まで進めやすい点も初心者に便利です。
+            </p>
+            <div class="action-row" aria-label="OS別セットアップへのリンク">
+              <a class="primary-button" href="#mac">Mac版を見る</a>
+              <a class="secondary-button" href="#windows">Windows版を見る</a>
+            </div>
+          </div>
+          <aside class="prep-panel" aria-labelledby="prep-title">
+            <h2 id="prep-title">準備すること</h2>
+            <ol class="number-list">
+              <li>ChatGPTにログインできる状態にする</li>
+              <li>Codexデスクトップアプリをインストールする</li>
+              <li>練習用フォルダで動作確認する</li>
+            </ol>
+            <p>
+              所要時間は10〜15分ほどです。Claude CodeやClaude Coworkをすでに使っている方も、今回はCodexデスクトップアプリをダウンロードしてください。
+            </p>
+            <p>
+              CodexはChatGPTと連携して使えるAI作業アプリです。環境によっては、PCで始めた作業をスマホ版ChatGPTアプリから確認・操作できる場合もあります。
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-band account-band">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">事前確認</p>
+            <h2>ChatGPTアカウント</h2>
+            <p>
+              ChatGPTの有料版を使っている方は、そのアカウントでCodexを利用できます。無料版でも現在はCodexを利用できる案内がありますが、利用上限や提供状況が変わる可能性があります。
+            </p>
+            <p>
+              無料版で参加予定の方は、講座前に必ずCodexデスクトップアプリでログインし、動作確認まで済ませてください。
+            </p>
+          </div>
+          <div class="link-panel">
+            <a href="https://chatgpt.com" target="_blank" rel="noreferrer">ChatGPTにログイン</a>
+            <a href="https://openai.com/ja-JP/codex/get-started/" target="_blank" rel="noreferrer">Codexダウンロードページを開く</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="mac">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Mac</p>
+            <h2>Mac版セットアップ</h2>
+            <p>Codexのダウンロードページを開き、表示されたMac版のダウンロードボタンから進めてください。</p>
+          </div>
+
+          <div class="steps">
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">1</span>
+                <h3>Codexをダウンロードする</h3>
+                <p>Codexのダウンロードページを開き、Mac版のCodexをダウンロードします。</p>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-mac/01-download-page.png" alt="Codexのダウンロードページ" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">2</span>
+                <h3>Applicationsフォルダへ入れる</h3>
+                <p>ダウンロードしたファイルを開き、Codex.appをApplicationsフォルダへドラッグします。</p>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-mac/02-drag-to-applications.png" alt="Codex.appをApplicationsフォルダへ移動する画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">3</span>
+                <h3>Codexを開く</h3>
+                <p>ApplicationsフォルダにCodex.appが入っていればインストール完了です。Codexを開き、ChatGPTアカウントでサインインします。</p>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-mac/03-applications-codex.png" alt="Applicationsフォルダ内のCodex.app" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">4</span>
+                <h3>練習用フォルダを選ぶ</h3>
+                <p>デスクトップに作った練習用フォルダをプロジェクトとして選びます。フォルダ名は <code>AI-X</code> にしてください。</p>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-mac/04-codex-home.png" alt="Codexの初期画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">5</span>
+                <h3>最初の依頼を送る</h3>
+                <p>プロジェクトを選んだら、下の文章を送ってみてください。</p>
+                <pre><code>このフォルダについて説明してください。まだ何もなければ、空のフォルダだと教えてください。</code></pre>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-mac/06-send-first-message.png" alt="Codexに最初の依頼を送る画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">6</span>
+                <h3>返答とファイル作成を確認する</h3>
+                <p>フォルダの中身を確認する返答が出たら、次にメモファイルの作成を頼みます。作成されたファイルが表示されれば動作確認は完了です。</p>
+                <pre><code>講座受講用のメモファイルを作成しておいて</code></pre>
+              </div>
+              <div class="figure-stack">
+                <figure>
+                  <img src="./assets/codex-setup-guide-mac/07-first-result.png" alt="Codexの返答を確認する画面" loading="lazy" />
+                </figure>
+                <figure>
+                  <img src="./assets/codex-setup-guide-mac/08-created-file.png" alt="Codexでファイル作成を確認する画面" loading="lazy" />
+                </figure>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section-alt" id="windows">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Windows</p>
+            <h2>Windows版セットアップ</h2>
+            <p>Windowsをご利用の方は、Windows版のCodexをインストールし、ChatGPTアカウントでサインインします。</p>
+          </div>
+
+          <div class="steps">
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">1</span>
+                <h3>Windows版をダウンロードする</h3>
+                <p>Codexのダウンロードページを開き、「Windows版をダウンロードする」を押します。</p>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-windows/01-download-page.png" alt="Windows版Codexのダウンロードページ" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">2</span>
+                <h3>インストールしてサインインする</h3>
+                <p>画面の案内に従ってインストールします。Codexを開いたら、ChatGPTで使っている方法でサインインしてください。</p>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-windows/03-chatgpt-login.png" alt="ChatGPTアカウントでサインインする画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">3</span>
+                <h3>サインイン完了を確認する</h3>
+                <p>ブラウザに「Signed in to Codex」と表示されたら、タブを閉じてCodexアプリに戻ります。</p>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-windows/04-signed-in.png" alt="Codexへのサインイン完了画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">4</span>
+                <h3>練習用フォルダで動作確認する</h3>
+                <p>デスクトップに <code>AI-X</code> フォルダを作り、Codexでそのフォルダをプロジェクトとして選びます。</p>
+                <p>次の2つを順番に試してください。</p>
+                <pre><code>このフォルダについて説明してください。まだ何もなければ、空のフォルダだと教えてください。</code></pre>
+                <pre><code>講座受講用のメモファイルを作成しておいて</code></pre>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-windows/05-practice-check.svg" alt="Windows版CodexでAI-Xフォルダを選んで動作確認する操作イメージ" loading="lazy" />
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band troubleshooting-band" id="windows-trouble">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Windowsでうまくいかない時</p>
+            <h2>よくあるつまずきと対処</h2>
+            <p>まずはアプリの再起動、サインインし直し、別のネットワークでの確認を試してください。設定変更が必要そうな場合は、無理に進めずスクリーンショットを共有してください。</p>
+          </div>
+
+          <div class="trouble-grid">
+            <article class="trouble-card">
+              <h3>ダウンロードや起動で止まる</h3>
+              <p>Microsoft StoreからCodexを開けない、または起動直後に止まる場合は、Storeの「ダウンロード」画面で更新を確認し、Codexを再起動してください。</p>
+            </article>
+
+            <article class="trouble-card">
+              <h3>サインイン画面が白い、または通信エラーが出る</h3>
+              <p>VPN、プロキシ、セキュリティ系の通信フィルターが影響することがあります。Codexを再起動し、必要に応じて別の回線でも試してください。</p>
+            </article>
+
+            <article class="trouble-card">
+              <h3>「Working」のまま進まない</h3>
+              <p>30〜60秒待っても変わらない場合は、作業を止めて新しいスレッドで短い依頼からやり直してください。最初はフォルダ説明だけで十分です。</p>
+            </article>
+
+            <article class="trouble-card">
+              <h3>PowerShellの実行エラーが出る</h3>
+              <p>「running scripts is disabled」のような表示は、Windowsの実行ポリシーでコマンドが止まっている状態です。講座前準備では設定を変えず、画面を共有してください。</p>
+            </article>
+
+            <article class="trouble-card">
+              <h3>管理者権限を求められる</h3>
+              <p>会社や学校のPCでは、インストールや一部の操作に管理者権限が必要な場合があります。自分で変更できない場合は、PCの管理者に確認してください。</p>
+            </article>
+
+            <article class="trouble-card">
+              <h3>利用上限の表示が出る</h3>
+              <p>無料版や利用量が多い場合は、Codexの上限に当たることがあります。時間を置いて再度試すか、講座前にログインと最初の動作確認だけ済ませてください。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band checklist-band" id="checklist">
+        <div class="section-inner checklist-grid">
+          <div>
+            <p class="eyebrow">最後に確認</p>
+            <h2>チェックリスト</h2>
+            <p>ここまで終わっていれば、講座当日はすぐに実践へ入れます。</p>
+          </div>
+          <ul class="checklist">
+            <li>ChatGPTにログインできる</li>
+            <li>Codexデスクトップアプリをインストールした</li>
+            <li>CodexアプリにChatGPTアカウントでログインできた</li>
+            <li>練習用フォルダを作成した</li>
+            <li>Codexでそのフォルダをプロジェクトとして選べた</li>
+            <li>Codexに最初の依頼を送れた</li>
+            <li>ファイル作成まで試せた</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-band note-band">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">エラーが出た場合</p>
+            <h2>講座前に共有するもの</h2>
+            <ul class="plain-list">
+              <li>Mac / Windowsどちらか</li>
+              <li>エラー画面のスクリーンショット</li>
+              <li>止まった手順</li>
+              <li>表示されたエラーメッセージ</li>
+            </ul>
+          </div>
+          <div>
+            <p class="eyebrow">注意</p>
+            <h2>初回練習はダミー資料で</h2>
+            <p>
+              初回練習では、実際の顧客情報・個人情報・社外秘資料は使わないでください。まずは練習用フォルダやダミー資料で動作確認をしてください。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <span>AI-X Codexデスクトップ事前準備</span>
+        <a href="#top">ページ上部へ戻る</a>
+      </div>
+    </footer>
+  </body>
+</html>

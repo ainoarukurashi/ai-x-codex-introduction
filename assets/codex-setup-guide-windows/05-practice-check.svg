@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Windows版Codexで練習用フォルダを選んで動作確認する操作イメージ</title>
+  <desc id="desc">Codexの画面でAI-Xフォルダをプロジェクトとして選び、最初の依頼とファイル作成を試すイメージです。</desc>
+  <rect width="1200" height="760" fill="#f4f7fb"/>
+  <rect x="44" y="42" width="1112" height="676" rx="18" fill="#fff" stroke="#d9e0eb" stroke-width="2"/>
+  <rect x="44" y="42" width="1112" height="58" rx="18" fill="#f8fafc"/>
+  <circle cx="76" cy="72" r="8" fill="#f87171"/>
+  <circle cx="104" cy="72" r="8" fill="#fbbf24"/>
+  <circle cx="132" cy="72" r="8" fill="#34d399"/>
+  <text x="172" y="79" fill="#172033" font-family="Segoe UI, Yu Gothic, sans-serif" font-size="20" font-weight="700">Codex</text>
+
+  <rect x="948" y="58" width="148" height="34" rx="17" fill="#eef4ff" stroke="#bfdbfe"/>
+  <text x="1022" y="80" text-anchor="middle" fill="#1d4ed8" font-family="Segoe UI, Yu Gothic, sans-serif" font-size="16" font-weight="700">操作イメージ</text>
+  <text x="600" y="194" text-anchor="middle" fill="#172033" font-family="Segoe UI, Yu Gothic, sans-serif" font-size="34" font-weight="700">何に取り組みますか？</text>
+  <text x="600" y="229" text-anchor="middle" fill="#64748b" font-family="Segoe UI, Yu Gothic, sans-serif" font-size="18">練習用フォルダを選んで、短い依頼を送ってみます</text>
+
+  <rect x="246" y="278" width="708" height="178" rx="22" fill="#ffffff" stroke="#d9e0eb" stroke-width="2"/>
+  <rect x="286" y="318" width="628" height="56" rx="12" fill="#f8fafc" stroke="#d9e0eb"/>
+  <text x="314" y="353" fill="#172033" font-family="Segoe UI, Yu Gothic, sans-serif" font-size="20">このフォルダについて説明してください。</text>
+  <circle cx="876" cy="346" r="19" fill="#172033"/>
+  <path d="M876 336 L886 348 H880 V359 H872 V348 H866 Z" fill="#fff"/>
+
+  <rect x="286" y="395" width="226" height="38" rx="10" fill="#eef4ff" stroke="#bfdbfe"/>
+  <text x="314" y="420" fill="#1d4ed8" font-family="Segoe UI, Yu Gothic, sans-serif" font-size="17" font-weight="700">📁 AI-X</text>
+  <text x="530" y="420" fill="#64748b" font-family="Segoe UI, Yu Gothic, sans-serif" font-size="16">プロジェクトとして選択</text>
+
+  <g transform="translate(246 500)">
+    <rect width="708" height="118" rx="16" fill="#f8fafc" stroke="#d9e0eb"/>
+    <text x="28" y="38" fill="#172033" font-family="Segoe UI, Yu Gothic, sans-serif" font-size="19" font-weight="700">Codexの返答例</text>
+    <text x="28" y="73" fill="#334155" font-family="Segoe UI, Yu Gothic, sans-serif" font-size="18">AI-Xフォルダの中身を確認しました。次にメモファイル作成を試せます。</text>
+  </g>
+
+  <g transform="translate(246 640)">
+    <rect width="708" height="46" rx="12" fill="#ecfdf5" stroke="#99f6e4"/>
+    <text x="28" y="30" fill="#0f766e" font-family="Segoe UI, Yu Gothic, sans-serif" font-size="18" font-weight="700">ここまでできれば、講座前の動作確認は完了です。</text>
+  </g>
+</svg>
