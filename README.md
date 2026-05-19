@@ -5,6 +5,7 @@ AI-X講座の受講者向けに、Codexデスクトップアプリの事前準�
 ## 内容
 
 - `index.html`: 公開用の案内ページ
+- `initial-settings.html`: 余裕がある方向けのCodex初期設定ガイド
 - `windows-troubleshooting.html`: Windows版の詳細トラブルシューティング
 - `styles.css`: ページのスタイル
 - `assets/`: Mac版・Windows版のスクリーンショット画像、Windowsエラー再現画像

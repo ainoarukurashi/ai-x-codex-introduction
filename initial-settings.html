@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codex初期設定ガイド | AI-X</title>
+    <meta
+      name="description"
+      content="AI-X講座の受講者向けに、Codexデスクトップアプリのフォルダ整理、ChatGPTとの違い、Browser Use、Computer Use、Worktreeを初心者向けに解説します。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./index.html#top" aria-label="AI-X Codex事前準備ガイドへ戻る">
+          <span class="brand-mark">AI-X</span>
+          <span>Codex初期設定</span>
+        </a>
+        <nav class="top-nav" aria-label="ページ内ナビゲーション">
+          <a href="./index.html">準備ガイド</a>
+          <a href="#folder">フォルダ</a>
+          <a href="#practice">体験</a>
+          <a href="#settings">設定</a>
+          <a href="#worktree">Worktree</a>
+          <a href="#checklist">チェック</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="detail-hero section-band">
+        <div class="section-inner detail-hero-grid">
+          <div>
+            <p class="eyebrow">余裕がある方向け</p>
+            <h1>Codexを安心して使うための初期設定ガイド</h1>
+            <p class="lead">
+              AI-X講座ではCodexデスクトップアプリを使います。ここから先は必須ではありませんが、エンジニア時間があり、事前準備に余裕がある方は初期設定まで済ませておくと当日スムーズです。
+            </p>
+            <p class="lead secondary-lead">
+              まずは「どのフォルダをCodexに見てもらうか」を整えます。その後、PC内のファイルを扱える感覚を体験し、最後に設定を確認します。
+            </p>
+            <div class="page-actions">
+              <a class="primary-button" href="#folder">初期設定を始める</a>
+              <a class="secondary-button" href="./index.html#checklist">必須準備へ戻る</a>
+            </div>
+          </div>
+          <figure class="detail-visual">
+            <img
+              src="./assets/codex-setup-guide-mac/04-codex-home.png"
+              alt="Codexデスクトップアプリの初期画面"
+              loading="eager"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-band quick-band" id="folder">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">最初に理解すること</p>
+            <h2>Codexは「選んだフォルダ」を見に行きます</h2>
+            <p>
+              Codexデスクトップアプリは、最初に選んだプロジェクトフォルダを手がかりに作業します。
+              そのため、フォルダ構成が整理されているほど、Codexにも人間にも分かりやすくなります。
+            </p>
+          </div>
+
+          <div class="concept-grid">
+            <article class="concept-card">
+              <span class="status-pill">大事</span>
+              <h3>作業場所を限定できる</h3>
+              <p>デスクトップ全体やダウンロードフォルダではなく、講座用のフォルダを選ぶと、関係ないファイルを触る心配を減らせます。</p>
+            </article>
+            <article class="concept-card">
+              <span class="status-pill">安心</span>
+              <h3>差分を確認しやすい</h3>
+              <p>どこに何があるか決まっていると、Codexが作ったファイルや変更したファイルを見つけやすくなります。</p>
+            </article>
+            <article class="concept-card">
+              <span class="status-pill">効率</span>
+              <h3>依頼が短くなる</h3>
+              <p>フォルダ名や置き場所が整理されていると、「このフォルダの資料を見て」と短く頼めるようになります。</p>
+            </article>
+          </div>
+
+          <div class="folder-layout">
+            <div>
+              <h3>おすすめの練習用フォルダ</h3>
+              <p>まずはデスクトップに <code>AI-X</code> フォルダを作り、その中を次のように分けておくと分かりやすいです。</p>
+            </div>
+            <pre class="folder-tree"><code>AI-X/
+├── 01_練習メモ/
+├── 02_素材/
+├── 03_Codexに作ってもらうもの/
+└── 99_完了/</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="practice">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">体験してみる</p>
+            <h2>まずは「提案だけ」頼むところから始めます</h2>
+            <p>
+              Codexは選んだフォルダ内のファイルを確認し、必要に応じて作成や編集もできます。
+              最初は勝手に整理させず、提案だけ出してもらう練習にします。
+            </p>
+          </div>
+
+          <div class="steps">
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">1</span>
+                <h3>CodexでAI-Xフォルダを開く</h3>
+                <p>Codexを開き、プロジェクトとして <code>AI-X</code> フォルダを選びます。まだ中身が少なくても大丈夫です。</p>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-mac/04-codex-home.png" alt="Codexでプロジェクトを選ぶ画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">2</span>
+                <h3>整理案だけ出してもらう</h3>
+                <p>次の文章を送ります。ポイントは「勝手に移動せず、まず提案だけ」と書くことです。</p>
+                <pre><code>このフォルダの中身を見て、初心者にも分かるように整理案を出してください。勝手に移動せず、まず提案だけしてください。</code></pre>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-mac/06-send-first-message.png" alt="Codexに整理案を依頼する画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">3</span>
+                <h3>小さく作業してもらう</h3>
+                <p>提案を見て問題なければ、まずはフォルダを1つだけ作ってもらいます。</p>
+                <pre><code>提案のうち、練習メモ用のフォルダだけ作成してください。</code></pre>
+                <p>Codexが変更内容を表示したら、内容を確認してから進めます。</p>
+              </div>
+              <figure>
+                <img src="./assets/codex-setup-guide-mac/08-created-file.png" alt="Codexで作成されたファイルを確認する画面" loading="lazy" />
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band comparison-band">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">ChatGPTとの違い</p>
+            <h2>相談が得意なChatGPT、作業場所を持てるCodex</h2>
+            <p>どちらが上という話ではなく、使う場面が少し違います。講座ではCodexの画面を使って、PC上のフォルダを扱う流れを体験します。</p>
+          </div>
+
+          <div class="comparison-table" role="table" aria-label="ChatGPTとCodexの違い">
+            <div class="comparison-row comparison-head" role="row">
+              <div role="columnheader">項目</div>
+              <div role="columnheader">ChatGPT</div>
+              <div role="columnheader">Codexデスクトップアプリ</div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div role="cell">得意なこと</div>
+              <div role="cell">相談、文章作成、アイデア出し</div>
+              <div role="cell">選んだフォルダの確認、ファイル作成、編集の補助</div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div role="cell">PC内のファイル</div>
+              <div role="cell">基本はアップロードしたものを見る</div>
+              <div role="cell">プロジェクトとして選んだフォルダを作業対象にできる</div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div role="cell">安心して使うコツ</div>
+              <div role="cell">個人情報を入れすぎない</div>
+              <div role="cell">練習用フォルダから始め、変更前に内容を確認する</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="settings">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">左下の設定</p>
+            <h2>初期設定で確認するところ</h2>
+            <p>
+              Codex左下の設定ボタンから確認します。初心者の方は、細かい設定を全部変える必要はありません。
+              「安全に使うための確認」と「Browser Use / Computer Useの準備」を中心に見ていきます。
+            </p>
+          </div>
+
+          <div class="settings-list">
+            <article>
+              <span class="status-pill">1</span>
+              <h3>通知</h3>
+              <p>Codexの作業完了や確認待ちに気づけるよう、通知はオンにしておくと便利です。講座中も「止まっているのか、待っているのか」が分かりやすくなります。</p>
+            </article>
+
+            <article>
+              <span class="status-pill">2</span>
+              <h3>変更確認・承認</h3>
+              <p>最初はCodexが作った変更を確認してから進める流れに慣れましょう。差分を見る、必要ならやり直しを頼む、問題なければ承認する、という順番です。</p>
+            </article>
+
+            <article>
+              <span class="status-pill">3</span>
+              <h3>Browser Use</h3>
+              <p>Webページを確認しながら作業したい場合に使います。設定からBrowser関連の項目を確認し、Chrome拡張の案内が出たらセットアップします。</p>
+              <p class="soft-note">許可するWebサイトは必要なものだけにします。銀行、医療、個人情報が多いページでは使わないようにしてください。</p>
+            </article>
+
+            <article>
+              <span class="status-pill">4</span>
+              <h3>Computer Use</h3>
+              <p>CodexがPC上のアプリ画面を見たり、クリックや入力を手伝ったりするための設定です。Macでは画面収録とアクセシビリティの許可を求められることがあります。</p>
+              <p class="soft-note">Windowsで項目が見当たらない場合は、今回はスキップして大丈夫です。Macで許可する場合も、Codexに触らせたいアプリだけ許可する感覚で進めましょう。</p>
+            </article>
+
+            <article>
+              <span class="status-pill">5</span>
+              <h3>モデル・表示</h3>
+              <p>モデルや見た目の設定は、最初はおすすめのままで問題ありません。文字が読みづらい場合だけ、テーマやフォントサイズを調整してください。</p>
+            </article>
+
+            <article>
+              <span class="status-pill">補足</span>
+              <h3>Git / GitHub</h3>
+              <p>エンジニアの方は後で使う場面がありますが、今回の講座準備では詳しく設定しなくて大丈夫です。初心者の方はここで止まらなくて構いません。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band quick-band" id="worktree">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Worktree</p>
+            <h2>初心者向けに言うと「別の作業スペース」です</h2>
+            <p>
+              Worktreeは、同じプロジェクトを別の場所にもう1つ用意して、Codexに並行作業してもらうための仕組みです。
+              Gitを使うプロジェクト向けの機能なので、AI-X講座の事前準備では必須ではありません。
+            </p>
+          </div>
+
+          <div class="worktree-panel">
+            <div>
+              <h3>イメージ</h3>
+              <p>
+                Localは、いま自分が見ている本来の作業場所です。Worktreeは、同じ資料の練習用コピーに近い場所です。
+                Codexに試してもらい、良さそうなら後で本来の作業場所へ戻す、という使い方をします。
+              </p>
+            </div>
+            <div class="worktree-diagram" aria-label="LocalとWorktreeのイメージ図">
+              <div>
+                <strong>Local</strong>
+                <span>自分が見る作業場所</span>
+              </div>
+              <div class="diagram-arrow">→</div>
+              <div>
+                <strong>Worktree</strong>
+                <span>Codexの別作業スペース</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="soft-callout">
+            <h3>講座準備ではこう考えればOK</h3>
+            <p>初めての方は、まず普通に <code>AI-X</code> フォルダを選んで使えば大丈夫です。Worktreeは「エンジニア向けの便利機能」として、名前だけ知っておけば十分です。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band checklist-band" id="checklist">
+        <div class="section-inner checklist-grid">
+          <div>
+            <p class="eyebrow">最後に確認</p>
+            <h2>初期設定チェックリスト</h2>
+            <p>全部できなくても大丈夫です。講座前にここまで進めたところまで分かっていれば、当日の説明が理解しやすくなります。</p>
+          </div>
+          <ul class="checklist interactive-checklist">
+            <li>
+              <label><input type="checkbox" /> <span><code>AI-X</code> フォルダを作った</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>Codexで <code>AI-X</code> フォルダを選べた</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>整理案だけを出してもらう依頼を送れた</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>変更前に内容を確認する流れが分かった</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>Browser Useの設定場所を確認した</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>Computer Useの設定場所を確認した</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>Worktreeは必須ではないと分かった</span></label>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-band note-band">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">困った時</p>
+            <h2>エラー画面を保存しておく</h2>
+            <p>設定中に分からない表示やエラーが出た場合は、エラー画面のスクリーンショットを撮って保存しておいてください。</p>
+          </div>
+          <div>
+            <p class="eyebrow">参考</p>
+            <h2>公式情報</h2>
+            <ul class="plain-list">
+              <li><a href="https://developers.openai.com/codex/app/settings" target="_blank" rel="noreferrer">Codex app settings</a></li>
+              <li><a href="https://developers.openai.com/codex/app/chrome-extension" target="_blank" rel="noreferrer">Codex Chrome extension</a></li>
+              <li><a href="https://developers.openai.com/codex/app/computer-use" target="_blank" rel="noreferrer">Computer Use</a></li>
+              <li><a href="https://developers.openai.com/codex/app/worktrees" target="_blank" rel="noreferrer">Worktrees</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <span>AI-X Codex初期設定ガイド</span>
+        <a href="https://willforward.co.jp/" target="_blank" rel="noreferrer">株式会社ウィルフォワード</a>
+        <a href="#top">ページ上部へ戻る</a>
+      </div>
+    </footer>
+  </body>
+</html>
