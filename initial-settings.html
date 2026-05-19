@@ -47,8 +47,8 @@
           </div>
           <figure class="detail-visual">
             <img
-              src="./assets/codex-setup-guide-mac/04-codex-home.png"
-              alt="Codexデスクトップアプリの初期画面"
+              src="./assets/codex-initial-settings/general-permissions.png"
+              alt="Codex設定の一般画面"
               loading="eager"
             />
           </figure>
@@ -193,43 +193,96 @@
             </p>
           </div>
 
-          <div class="settings-list">
-            <article>
-              <span class="status-pill">1</span>
-              <h3>通知</h3>
-              <p>Codexの作業完了や確認待ちに気づけるよう、通知はオンにしておくと便利です。講座中も「止まっているのか、待っているのか」が分かりやすくなります。</p>
+          <div class="settings-list visual-settings-list">
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">1</span>
+                <h3>一般</h3>
+                <p>作業モード、権限、通知、表示言語などを確認します。最初はおすすめのままで問題ありません。</p>
+                <p>通知はオンにしておくと、Codexの作業完了や確認待ちに気づきやすくなります。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/codex-initial-settings/general-permissions.png" alt="Codex設定の一般画面で権限と通知を確認する画面" loading="lazy" />
+              </figure>
             </article>
 
-            <article>
-              <span class="status-pill">2</span>
-              <h3>変更確認・承認</h3>
-              <p>最初はCodexが作った変更を確認してから進める流れに慣れましょう。差分を見る、必要ならやり直しを頼む、問題なければ承認する、という順番です。</p>
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">2</span>
+                <h3>構成</h3>
+                <p>承認ポリシーとサンドボックス設定を確認します。初心者の方は、Codexが確認を求める設定のままにしておくと安心です。</p>
+                <p class="soft-note">画面例のように <code>On request</code> や <code>Read only</code> が見えていれば、まずはそのままで大丈夫です。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/codex-initial-settings/configuration.png" alt="Codex設定の構成画面で承認ポリシーとサンドボックスを確認する画面" loading="lazy" />
+              </figure>
             </article>
 
-            <article>
-              <span class="status-pill">3</span>
-              <h3>Browser Use</h3>
-              <p>Webページを確認しながら作業したい場合に使います。設定からBrowser関連の項目を確認し、Chrome拡張の案内が出たらセットアップします。</p>
-              <p class="soft-note">許可するWebサイトは必要なものだけにします。銀行、医療、個人情報が多いページでは使わないようにしてください。</p>
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">3</span>
+                <h3>パーソナライズ</h3>
+                <p>Codexの返答の雰囲気や、追加で伝えておきたい指示を設定できます。講座前は無理に書かなくて大丈夫です。</p>
+                <p>性格は「フレンドリー」のままで問題ありません。慣れてきたら、自分の作業ルールを少しずつ追加します。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/codex-initial-settings/personalize.png" alt="Codex設定のパーソナライズ画面" loading="lazy" />
+              </figure>
             </article>
 
-            <article>
-              <span class="status-pill">4</span>
-              <h3>Computer Use</h3>
-              <p>CodexがPC上のアプリ画面を見たり、クリックや入力を手伝ったりするための設定です。Macでは画面収録とアクセシビリティの許可を求められることがあります。</p>
-              <p class="soft-note">Windowsで項目が見当たらない場合は、今回はスキップして大丈夫です。Macで許可する場合も、Codexに触らせたいアプリだけ許可する感覚で進めましょう。</p>
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">4</span>
+                <h3>ブラウザ</h3>
+                <p>CodexがWebページを確認しながら作業するための設定です。必要な方は、画面の「インストール」からブラウザ機能を準備します。</p>
+                <p class="soft-note">承認は「常に確認」にしておくのがおすすめです。許可するWebサイトは必要なものだけにしてください。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/codex-initial-settings/browser.png" alt="Codex設定のブラウザ画面" loading="lazy" />
+              </figure>
             </article>
 
-            <article>
-              <span class="status-pill">5</span>
-              <h3>モデル・表示</h3>
-              <p>モデルや見た目の設定は、最初はおすすめのままで問題ありません。文字が読みづらい場合だけ、テーマやフォントサイズを調整してください。</p>
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">5</span>
+                <h3>コンピューターの使用</h3>
+                <p>Codexが他のアプリ画面を見たり、クリックや入力を手伝ったりするための設定です。</p>
+                <p>Macでは画面収録とアクセシビリティの許可を求められることがあります。Windowsで項目が見当たらない場合は、今回はスキップして大丈夫です。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/codex-initial-settings/computer-use.png" alt="Codex設定のコンピューターの使用画面" loading="lazy" />
+              </figure>
             </article>
 
-            <article>
-              <span class="status-pill">補足</span>
-              <h3>Git / GitHub</h3>
-              <p>エンジニアの方は後で使う場面がありますが、今回の講座準備では詳しく設定しなくて大丈夫です。初心者の方はここで止まらなくて構いません。</p>
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">6</span>
+                <h3>外観</h3>
+                <p>文字が読みづらい場合だけ、テーマやフォントサイズを調整します。見た目の好みなので、講座前に必ず変える必要はありません。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/codex-initial-settings/appearance.png" alt="Codex設定の外観画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">7</span>
+                <h3>使用状況と請求</h3>
+                <p>利用上限や残りの使用量を確認できます。講座前に、ログインできているか、上限に近づいていないかだけ見ておくと安心です。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/codex-initial-settings/usage-billing.png" alt="Codex設定の使用状況と請求画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card text-setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">補足</span>
+                <h3>Git / GitHub、MCPサーバー、フック</h3>
+                <p>エンジニアの方は後で使う場面がありますが、今回の講座準備では詳しく設定しなくて大丈夫です。初心者の方はここで止まらなくて構いません。</p>
+                <p>分からない項目は、無理にオン・オフを変えず、そのままにしておきます。</p>
+              </div>
             </article>
           </div>
         </div>
@@ -254,17 +307,9 @@
                 Codexに試してもらい、良さそうなら後で本来の作業場所へ戻す、という使い方をします。
               </p>
             </div>
-            <div class="worktree-diagram" aria-label="LocalとWorktreeのイメージ図">
-              <div>
-                <strong>Local</strong>
-                <span>自分が見る作業場所</span>
-              </div>
-              <div class="diagram-arrow">→</div>
-              <div>
-                <strong>Worktree</strong>
-                <span>Codexの別作業スペース</span>
-              </div>
-            </div>
+            <figure class="setting-shot">
+              <img src="./assets/codex-initial-settings/worktree.png" alt="Codex設定のWorktree画面" loading="lazy" />
+            </figure>
           </div>
 
           <div class="soft-callout">

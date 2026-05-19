@@ -549,6 +549,35 @@ code {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.visual-settings-list {
+  grid-template-columns: 1fr;
+}
+
+.setting-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1.45fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.setting-copy p + p:not(.soft-note) {
+  margin-top: 8px;
+}
+
+.setting-shot {
+  box-shadow: 0 10px 26px rgba(32, 47, 73, 0.06);
+}
+
+.setting-shot img {
+  max-height: 430px;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.text-setting-card {
+  grid-template-columns: 1fr;
+}
+
 .worktree-panel {
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
@@ -761,6 +790,7 @@ code {
   .issue-grid,
   .concept-grid,
   .settings-list,
+  .setting-card,
   .folder-layout,
   .worktree-panel,
   .comparison-row {
