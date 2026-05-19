@@ -13,7 +13,7 @@ AI-X講座にお申し込みの皆様へ
 - Codexデスクトップアプリをインストールする
 - 練習用フォルダで動作確認する
 
-余裕がある方は、事前準備の後にCodex初期設定ガイドも確認してください。フォルダ整理、Browser Use、Computer Use、Worktreeの基本をまとめています。
+事前準備が終わったら、Codex初期設定ガイドも確認してください。フォルダ整理、Browser Use、Computer Use、Worktreeの基本をまとめています。
 
 Claude CodeやClaude Coworkをすでに使い慣れている方は、講座中の作業でそのまま使っていただいても大丈夫です。
 
