@@ -51,17 +51,17 @@ Windowsの確認画面が出た場合は、内容を確認して進めてくだ�
 
 ![Codexへのサインイン完了](assets/codex-setup-guide-windows/04-signed-in.png)
 
-## 5. 練習用フォルダを作る
-
-デスクトップに練習用フォルダを作ります。
-
-フォルダ名は `AI-X` にしてください。
+## 5. AI-Xフォルダを作る
 
 エクスプローラーでデスクトップを開き、右クリックして「新規作成」から「フォルダー」を選んでください。
 
+フォルダ名は `AI-X` にしてください。
+
+![WindowsのエクスプローラーでAI-Xフォルダを作る画面](assets/codex-setup-guide-windows/05-create-ai-x-folder.svg)
+
 ## 6. Codexでプロジェクトを選ぶ
 
-Codexを開き、先ほど作った練習用フォルダをプロジェクトとして選びます。
+Codexを開き、先ほど作った `AI-X` フォルダをプロジェクトとして選びます。
 
 ![Windows版Codexで動作確認する操作イメージ](assets/codex-setup-guide-windows/05-practice-check.svg)
 
@@ -92,7 +92,7 @@ Codexが変更内容を表示したら、内容を確認してから承認して
 - [ ] ChatGPTにログインできる
 - [ ] Codexデスクトップアプリをインストールした
 - [ ] CodexアプリにChatGPTアカウントでログインできた
-- [ ] 練習用フォルダを作成した
+- [ ] AI-Xフォルダを作成した
 - [ ] Codexでそのフォルダをプロジェクトとして選べた
 - [ ] Codexに最初の依頼を送れた
 - [ ] ファイル作成まで試せた
