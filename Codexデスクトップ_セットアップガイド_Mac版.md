@@ -59,7 +59,7 @@ Finderでデスクトップを開き、新規フォルダを作ります。
 
 フォルダ名は `AI-X` にしてください。
 
-![MacのFinderでAI-Xフォルダを作る画面](assets/codex-setup-guide-mac/05-create-ai-x-folder.svg)
+![MacのFinderでAI-Xフォルダを作る画面](assets/codex-setup-guide-mac/05-create-ai-x-folder.png)
 
 ## 6. Codexでプロジェクトを選ぶ
 

@@ -57,7 +57,7 @@ Windowsの確認画面が出た場合は、内容を確認して進めてくだ�
 
 フォルダ名は `AI-X` にしてください。
 
-![WindowsのエクスプローラーでAI-Xフォルダを作る画面](assets/codex-setup-guide-windows/05-create-ai-x-folder.svg)
+![WindowsのエクスプローラーでAI-Xフォルダを作る画面](assets/codex-setup-guide-windows/05-create-ai-x-folder.png)
 
 ## 6. Codexでプロジェクトを選ぶ
 
