@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" role="img" aria-labelledby="title desc">
+  <title id="title">Claude Customize スキル</title>
+  <desc id="desc">Customize画面でスキル一覧とスキル詳細を確認する参考図</desc>
+  <style>.bg{fill:#f7f7f5}.panel{fill:#fff}.mid{fill:#fafafa}.sel{fill:#e8e6e2}.line{stroke:#e4e0da;stroke-width:1}.txt{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;fill:#171717}.muted{fill:#777}.small{font-size:14px}.head{font-size:22px;font-weight:800}.btn{fill:#fff;stroke:#ddd}.toggle{fill:#2563eb}.card{fill:#fff;stroke:#ddd}</style>
+  <rect width="960" height="620" class="bg"/><rect width="960" height="34" class="panel"/>
+  <circle cx="20" cy="17" r="6" fill="#ff5f57"/><circle cx="38" cy="17" r="6" fill="#febc2e"/><circle cx="56" cy="17" r="6" fill="#28c840"/><text x="86" y="23" class="txt small">Customize</text>
+  <rect x="0" y="34" width="190" height="586" class="panel"/>
+  <rect x="12" y="58" width="166" height="32" rx="7" class="btn"/><text x="30" y="79" class="txt small">Desktop</text>
+  <rect x="12" y="108" width="166" height="30" rx="7" class="sel"/><text x="24" y="128" class="txt small">スキル</text>
+  <text x="24" y="165" class="txt small">コネクタ</text>
+  <text x="24" y="225" class="muted small">個人用プラグイン</text><rect x="42" y="258" width="128" height="36" rx="8" class="btn"/><text x="64" y="281" class="txt small">プラグインを参照</text>
+  <rect x="190" y="34" width="282" height="586" class="mid" stroke="#ddd"/>
+  <text x="212" y="75" class="txt head">スキル</text>
+  <circle cx="410" cy="68" r="8" fill="none" stroke="#111" stroke-width="1.6"/><line x1="416" y1="74" x2="424" y2="82" stroke="#111" stroke-width="1.6"/>
+  <text x="212" y="118" class="muted small">個人のスキル</text>
+  <rect x="205" y="132" width="250" height="34" rx="8" class="sel"/><text x="222" y="154" class="txt small">weekly-ai-news-manager</text>
+  <text x="222" y="196" class="txt small">piclub-slip-input</text>
+  <text x="222" y="238" class="txt small">skill-creator</text>
+  <text x="222" y="280" class="muted small">training-thankyou-email</text>
+  <text x="222" y="322" class="muted small">daily-ai-news-digest</text>
+  <text x="222" y="364" class="muted small">web-material-collector</text>
+  <text x="222" y="406" class="muted small">nanobanan-design</text>
+  <text x="510" y="78" class="txt head">weekly-ai-news-manager</text>
+  <rect x="870" y="58" width="34" height="18" rx="9" class="toggle"/><circle cx="893" cy="67" r="7" fill="#fff"/>
+  <text x="510" y="124" class="muted small">追加者</text><text x="580" y="124" class="txt small">あなた</text>
+  <text x="660" y="124" class="muted small">トリガー</text><text x="735" y="124" class="txt small">スラッシュコマンド + 自動</text>
+  <line x1="510" y1="154" x2="920" y2="154" class="line"/>
+  <text x="510" y="188" class="txt small">説明</text>
+  <text x="510" y="218" class="muted small">週刊AIニュースの作成、管理、保存を行うスキル。</text>
+  <text x="510" y="246" class="muted small">説明文とトリガーを確認してから使います。</text>
+  <rect x="510" y="292" width="410" height="260" rx="12" class="card"/>
+  <text x="540" y="338" class="txt head">スキルの内容を確認</text>
+  <text x="540" y="384" class="muted small">1. 何を自動化するスキルか</text>
+  <text x="540" y="420" class="muted small">2. どの言葉で起動するか</text>
+  <text x="540" y="456" class="muted small">3. 外部サービスやファイルを扱うか</text>
+  <text x="540" y="510" class="txt small">分かるものだけオンにします</text>
+</svg>

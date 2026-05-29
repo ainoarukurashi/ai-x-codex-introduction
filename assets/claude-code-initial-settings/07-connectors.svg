@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" role="img" aria-labelledby="title desc">
+  <title id="title">Claude設定 コネクタはカスタマイズへ移動</title>
+  <desc id="desc">Claude設定のコネクタ画面で、コネクタがCustomizeへ移動した案内を確認する参考図</desc>
+  <style>
+    .bg{fill:#f7f7f5}.panel{fill:#fff}.sel{fill:#e8e6e2}.line{stroke:#e4e0da;stroke-width:1}.txt{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;fill:#171717}.muted{fill:#777}.small{font-size:14px}.head{font-size:22px;font-weight:800}.card{fill:#fff;stroke:#ddd}.link{fill:#2563eb}.pill{fill:#eef2ff;stroke:#c7d2fe}
+  </style>
+  <rect width="960" height="620" class="bg"/>
+  <rect width="960" height="34" class="panel"/>
+  <circle cx="20" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="38" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="56" cy="17" r="6" fill="#28c840"/>
+  <text x="86" y="23" class="txt small">設定</text>
+
+  <rect x="0" y="34" width="182" height="586" class="panel"/>
+  <text x="22" y="80" class="txt small">一般</text>
+  <text x="22" y="112" class="txt small">アカウント</text>
+  <text x="22" y="144" class="txt small">プライバシー</text>
+  <text x="22" y="176" class="txt small">請求</text>
+  <text x="22" y="208" class="txt small">使用量</text>
+  <text x="22" y="240" class="txt small">機能</text>
+  <rect x="12" y="254" width="158" height="30" rx="7" class="sel"/>
+  <text x="22" y="274" class="txt small">コネクタ</text>
+  <text x="22" y="306" class="txt small">Claude Code</text>
+  <text x="22" y="338" class="txt small">Cowork</text>
+  <text x="22" y="370" class="txt small">Claude in Chrome</text>
+  <text x="22" y="430" class="muted small">デスクトップアプリ</text>
+  <text x="22" y="462" class="txt small">一般</text>
+  <text x="22" y="494" class="txt small">拡張機能</text>
+  <text x="22" y="526" class="txt small">開発者</text>
+
+  <text x="230" y="96" class="txt head">コネクタ</text>
+  <line x1="230" y1="126" x2="930" y2="126" class="line"/>
+  <text x="230" y="172" class="txt small">コネクタは</text>
+  <text x="300" y="172" class="link small">カスタマイズ</text>
+  <text x="382" y="172" class="txt small">に移動しました。そちらで参照、接続、管理ができます。</text>
+
+  <rect x="230" y="230" width="700" height="230" rx="12" class="card"/>
+  <text x="270" y="285" class="txt head">Customizeで管理します</text>
+  <text x="270" y="330" class="muted small">Google Drive、Notion、Slackなどの外部サービス連携は、Customize側で確認します。</text>
+  <text x="270" y="362" class="muted small">講座準備では、まだ接続しなくても大丈夫です。必要になった時だけ接続します。</text>
+  <rect x="270" y="405" width="170" height="38" rx="19" class="pill"/>
+  <text x="305" y="429" class="txt small">Customizeを開く</text>
+
+  <text x="230" y="532" class="txt small">次の画面で、使うコネクタとツール権限を確認します。</text>
+</svg>

@@ -1,5 +1,17 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/claude-desktop",
+      "destination": "/claude",
+      "permanent": true
+    },
+    {
+      "source": "/claude-desktop.html",
+      "destination": "/claude",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/:path*",

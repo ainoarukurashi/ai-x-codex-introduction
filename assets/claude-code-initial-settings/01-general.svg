@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" role="img" aria-labelledby="title desc">
+  <title id="title">Claude設定 一般</title>
+  <desc id="desc">プロフィール、外観、通知を確認する一般設定画面の参考図</desc>
+  <style>
+    .bg{fill:#f7f7f5}.panel{fill:#fff}.side{fill:#f2f1ee}.sel{fill:#e8e6e2}.line{stroke:#e4e0da;stroke-width:1}.txt{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;fill:#171717}.muted{fill:#777}.label{font-size:18px;font-weight:700}.small{font-size:14px}.head{font-size:22px;font-weight:800}.toggle{fill:#2563eb}.off{fill:#d6d3ce}
+  </style>
+  <rect width="960" height="620" class="bg"/>
+  <rect width="960" height="34" class="panel"/>
+  <circle cx="20" cy="17" r="6" fill="#ff5f57"/><circle cx="38" cy="17" r="6" fill="#febc2e"/><circle cx="56" cy="17" r="6" fill="#28c840"/>
+  <text x="86" y="23" class="txt small">設定</text>
+  <rect x="0" y="34" width="182" height="586" class="panel"/>
+  <rect x="12" y="60" width="158" height="30" rx="7" class="sel"/>
+  <text x="22" y="80" class="txt small">一般</text>
+  <text x="22" y="112" class="txt small">アカウント</text><text x="22" y="144" class="txt small">プライバシー</text><text x="22" y="176" class="txt small">請求</text><text x="22" y="208" class="txt small">使用量</text><text x="22" y="240" class="txt small">機能</text><text x="22" y="272" class="txt small">コネクタ</text><text x="22" y="304" class="txt small">Claude Code</text><text x="22" y="336" class="txt small">Cowork</text><text x="22" y="368" class="txt small">Claude in Chrome</text>
+  <text x="210" y="72" class="txt head">プロフィール</text>
+  <text x="210" y="118" class="txt small">アバター</text><circle cx="892" cy="106" r="20" fill="#e8e8e8"/><text x="882" y="112" class="txt small">AI</text>
+  <line x1="210" y1="142" x2="930" y2="142" class="line"/>
+  <text x="210" y="178" class="txt small">氏名</text><rect x="760" y="158" width="170" height="28" rx="7" fill="#fff" stroke="#ddd"/>
+  <line x1="210" y1="205" x2="930" y2="205" class="line"/>
+  <text x="210" y="242" class="txt small">Claudeには何とお呼びしてほしいですか？</text><rect x="760" y="222" width="170" height="28" rx="7" fill="#fff" stroke="#ddd"/>
+  <line x1="210" y1="270" x2="930" y2="270" class="line"/>
+  <text x="210" y="306" class="txt small">Claudeへの指示</text>
+  <rect x="210" y="322" width="720" height="76" rx="8" fill="#fff" stroke="#ddd"/>
+  <text x="222" y="350" class="muted small">例：初心者にも分かる言葉で説明してください</text>
+  <text x="210" y="450" class="txt head">通知</text>
+  <text x="210" y="494" class="txt label">レスポンス完了</text><text x="210" y="520" class="muted small">長時間かかるタスクの完了を通知します</text><rect x="900" y="488" width="34" height="18" rx="9" class="toggle"/><circle cx="923" cy="497" r="7" fill="#fff"/>
+  <line x1="210" y1="538" x2="930" y2="538" class="line"/>
+  <text x="210" y="574" class="txt label">Code通知</text><text x="210" y="598" class="muted small">Codeセッションの重要な更新を通知します</text><rect x="900" y="568" width="34" height="18" rx="9" class="toggle"/><circle cx="923" cy="577" r="7" fill="#fff"/>
+</svg>

@@ -11,6 +11,7 @@ AI-X講座にお申し込みの皆様へ
 
 - ChatGPTにログインできる状態にする
 - Codexデスクトップアプリをインストールする
+- WindowsでGitエラーが出た方だけGitを入れて再起動する
 - 練習用フォルダで動作確認する
 
 事前準備が終わったら、Codex初期設定ガイドも確認してください。フォルダ整理、Browser Use、Computer Use、Worktreeの基本をまとめています。
@@ -51,6 +52,8 @@ https://openai.com/ja-JP/codex/get-started/
 
 Windows版はMicrosoft Storeまたは公式リンクからインストールしてください。
 
+WindowsでCodexを使う途中に「git が認識されない」「Gitが見つからない」などの表示が出た方だけ、Git for Windowsを入れてください。基本的には **Standalone Installer** の **Git for Windows/x64 Setup** を選びます。Gitを新しく入れた方は、Finishまで完了したあとWindowsを一度再起動し、Codexを開き直してください。
+
 ## 3. Codexで最初の動作確認をする
 
 Codexアプリを開き、ChatGPTアカウントでサインインします。
@@ -61,6 +64,8 @@ Codexアプリを開き、ChatGPTアカウントでサインインします。
 - Windows：エクスプローラーでデスクトップに `AI-X` フォルダを作る
 
 Codexでそのフォルダをプロジェクトとして選んでください。
+
+WindowsでGitエラーやGitの案内が出た場合は、Git for Windowsを入れて再起動してから、もう一度Codexを開いてください。基本的には **Standalone Installer** の **Git for Windows/x64 Setup** を選びます。何も出ていない方、すでにGitが入っている方はそのまま進めます。
 
 まず、次のように送ってみてください。
 
@@ -84,6 +89,7 @@ Codexが変更内容を表示したら、内容を確認してから承認して
 - [ ] Codexデスクトップアプリをインストールした
 - [ ] CodexアプリにChatGPTアカウントでログインできた
 - [ ] `AI-X` フォルダを作成した
+- [ ] WindowsでGitを入れた方は再起動した
 - [ ] Codexでそのフォルダをプロジェクトとして選べた
 - [ ] Codexに1回メッセージを送れた
 - [ ] `hello.txt` の作成を試せた
@@ -96,6 +102,7 @@ Codexが変更内容を表示したら、内容を確認してから承認して
 - Mac / Windowsどちらか
 - エラー画面のスクリーンショット
 - 止まった手順
+- WindowsでGitを入れたか、再起動したか
 - 表示されたエラーメッセージ
 
 ## 注意
@@ -112,4 +119,5 @@ Codexが変更内容を表示したら、内容を確認してから承認して
 ## 参考リンク
 
 - Codexダウンロードページ：https://openai.com/ja-JP/codex/get-started/
+- Git for Windows：https://git-scm.com/install/windows
 - ChatGPT：https://chatgpt.com

@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Claude Code初期設定ガイド | AI-X</title>
+    <meta
+      name="description"
+      content="AI-X講座の受講者向けに、Claude Codeのフォルダ選択、Chat・Cowork・Codeの違い、設定画面の確認順、権限まわりを初心者向けに解説します。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./claude.html#top" aria-label="AI-X Claude Codeインストールガイドへ戻る">
+          <span class="brand-mark">AI-X</span>
+          <span>Claude Code初期設定</span>
+        </a>
+        <nav class="top-nav" aria-label="ページ内ナビゲーション">
+          <a href="./index.html">トップ</a>
+          <a href="./claude.html">Claude Codeインストール</a>
+          <a href="#folder">フォルダ</a>
+          <a href="#difference">使い分け</a>
+          <a href="#settings">設定</a>
+          <a href="#checklist">チェックリスト</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="detail-hero section-band">
+        <div class="section-inner detail-hero-grid">
+          <div>
+            <p class="eyebrow">事前準備が終わったら</p>
+            <h1>Claude Codeを安心して使うための初期設定ガイド</h1>
+            <p class="lead">
+              Claudeデスクトップアプリの準備が終わったら、まずは <code>AI-X</code> フォルダを作業場所にして、設定画面を一通り確認します。
+            </p>
+            <p class="lead secondary-lead">
+              ここでは細かい設定を全部変えるのではなく、講座前に「どこを見ればよいか」「どの権限に注意するか」が分かる状態にします。
+            </p>
+            <div class="page-actions">
+              <a class="primary-button" href="#folder">初期設定を始める</a>
+              <a class="secondary-button" href="./claude.html#checklist">必須準備へ戻る</a>
+            </div>
+          </div>
+          <figure class="detail-visual">
+            <img
+              src="./assets/claude-code-initial-settings/01-general.svg"
+              alt="Claude設定の一般画面"
+              loading="eager"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-band quick-band" id="folder">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">最初に理解すること</p>
+            <h2>Claude Codeは「選んだフォルダ」を見に行きます</h2>
+            <p>
+              Claude Codeは、作業対象として選んだフォルダを手がかりに動きます。
+              最初から大事なフォルダ全体を渡すのではなく、練習用の <code>AI-X</code> フォルダから始めると安心です。
+            </p>
+          </div>
+
+          <div class="concept-grid">
+            <article class="concept-card">
+              <span class="status-pill">安全</span>
+              <h3>作業範囲を狭くできる</h3>
+              <p>デスクトップ全体ではなく講座用フォルダを選ぶと、関係ないファイルを触る心配を減らせます。</p>
+            </article>
+            <article class="concept-card">
+              <span class="status-pill">確認</span>
+              <h3>変更点を見つけやすい</h3>
+              <p>Claudeが作ったファイルや編集した内容を、あとから自分で確認しやすくなります。</p>
+            </article>
+            <article class="concept-card">
+              <span class="status-pill">練習</span>
+              <h3>まずは空のフォルダでOK</h3>
+              <p>最初はメモ作成やフォルダ説明だけ試せれば十分です。慣れてから実際の資料を入れます。</p>
+            </article>
+          </div>
+
+          <div class="folder-layout">
+            <div>
+              <h3>おすすめの練習用フォルダ</h3>
+              <p>デスクトップに <code>AI-X</code> フォルダを作り、Claude Codeではこのフォルダを選びます。</p>
+            </div>
+            <pre class="folder-tree"><code>AI-X/
+├── 01_練習メモ/
+├── 02_素材/
+├── 03_Claudeに作ってもらうもの/
+└── 99_完了/</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band comparison-band" id="difference">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Chat / Cowork / Code</p>
+            <h2>相談が得意なチャット、作業場所を持てるのがCowork、さらにやれることが増えるのがCode</h2>
+            <p>
+              Claudeの中にも役割の違いがあります。迷ったら、相談はChat、資料や作業場所を持たせたい時はCowork、ファイルやコードまで扱う時はCode、と考えると分かりやすいです。
+            </p>
+          </div>
+
+          <div class="comparison-table three-tool-table" role="table" aria-label="ClaudeのChat、Cowork、Codeの違い">
+            <div class="comparison-row comparison-head" role="row">
+              <div role="columnheader">項目</div>
+              <div role="columnheader">Chat</div>
+              <div role="columnheader">Cowork</div>
+              <div role="columnheader">Code</div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div role="cell">得意なこと</div>
+              <div role="cell">相談、文章作成、アイデア出し</div>
+              <div role="cell">作業場所を持って、資料やタスクを進める</div>
+              <div role="cell">フォルダ、ファイル、コード、コマンドを扱う</div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div role="cell">使う場面</div>
+              <div role="cell">質問したい、考えを整理したい</div>
+              <div role="cell">案件や資料をまとめて進めたい</div>
+              <div role="cell">PC内の練習フォルダで作業を試したい</div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div role="cell">安心して使うコツ</div>
+              <div role="cell">個人情報を入れすぎない</div>
+              <div role="cell">扱う資料の範囲を決める</div>
+              <div role="cell"><code>AI-X</code> フォルダから始め、権限は確認しながら進める</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="settings">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">設定画面</p>
+            <h2>初期設定で確認するところ</h2>
+            <p>
+              Claudeデスクトップアプリの設定画面を、左メニューの上から順番に確認します。
+              変更が必要な項目だけを押さえ、分からない項目は無理にオン・オフを変えずに進めます。
+            </p>
+          </div>
+
+          <div class="settings-list visual-settings-list">
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">1</span>
+                <h3>一般</h3>
+                <p>プロフィール、見た目、通知を確認します。氏名や呼び名、Claudeへの指示は必要に応じて入力します。</p>
+                <p><strong>Claudeへの指示</strong>は、ChatとCoworkで反映される基本方針です。講座準備では空欄でも問題ありません。</p>
+                <p><strong>Code通知</strong>はオンのままで大丈夫です。長い作業が終わった時に気づきやすくなります。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/01-general.svg" alt="Claude設定の一般画面でプロフィールと通知を確認する画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">2</span>
+                <h3>アカウント</h3>
+                <p>ログイン中の端末を確認します。見覚えのない端末がある場合だけ、メニューからログアウトを検討します。</p>
+                <p>講座前は「現在」と表示されているClaude Desktopがあるか確認できれば十分です。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/02-account.svg" alt="Claude設定のアカウント画面でアクティブなセッションを確認する画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">3</span>
+                <h3>プライバシー</h3>
+                <p>データの扱いと共有設定を確認します。<strong>Claudeの改善に協力</strong>は、チャットやコーディングセッションの内容をClaudeに学習させないため、基本的にはオフ推奨です。</p>
+                <p>データのエクスポート、共有チャット、記憶設定は、必要になってから使います。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/03-privacy.svg" alt="Claude設定のプライバシー画面でデータ使用設定を確認する画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">4</span>
+                <h3>請求</h3>
+                <p>契約中のプラン、支払い方法、請求書を確認します。Claude Codeを使う方は、有料プランになっていることを確認します。</p>
+                <p class="soft-note">講座用の案内では、年間ではなく月額で契約する前提です。プラン変更やキャンセルは誤操作しないように注意してください。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/04-billing.svg" alt="Claude設定の請求画面でプランと請求書を確認する画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">5</span>
+                <h3>使用量</h3>
+                <p>現在のセッション、週間制限、利用クレジットを確認します。講座前に上限近くまで使い切っていないかだけ見ておきます。</p>
+                <p>制限に近い場合は、リセット時間を待つか、当日の作業量を控えめにします。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/05-usage.svg?v=20260527-usage-fix" alt="Claude設定の使用量画面で利用制限を確認する画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">6</span>
+                <h3>機能</h3>
+                <p>メモリー、ツールアクセス、ビジュアル、コード実行とファイル作成を確認します。</p>
+                <p><strong>ネットワーク外部通信</strong>や<strong>クラウドコード実行とファイル作成</strong>は便利ですが、何のために使うか分かる時だけオンにします。</p>
+                <p>初心者の方は、まず初期状態のまま進めて、必要になった時に講師の案内に沿って確認すれば大丈夫です。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/06-features.svg" alt="Claude設定の機能画面でメモリーとコード実行設定を確認する画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">7</span>
+                <h3>コネクタ</h3>
+                <p>設定のコネクタ画面では、<strong>カスタマイズに移動しました</strong>という案内が表示されます。Google Drive、Notion、Slackなどの外部サービス連携は、Customize側で管理します。</p>
+                <p>講座準備では、一覧を確認できれば十分です。必要な連携だけ選んで、後から接続します。ツール権限は、最初は<strong>承認が必要</strong>にしておくと安心です。</p>
+              </div>
+              <div class="setting-shot-stack">
+                <figure class="setting-shot">
+                  <img src="./assets/claude-code-initial-settings/07-connectors.svg?v=20260527-customize-moved" alt="Claude設定でコネクタがカスタマイズへ移動した案内を確認する画面" loading="lazy" />
+                </figure>
+                <figure class="setting-shot">
+                  <img src="./assets/claude-code-initial-settings/14-connectors-tools.svg?v=20260527-connectors-tools" alt="Claude Customizeでコネクタのツール権限を確認する画面" loading="lazy" />
+                </figure>
+              </div>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">8</span>
+                <h3>スキル</h3>
+                <p>スキルは、よく使う作業手順や専門的な進め方をClaudeに渡しておける機能です。</p>
+                <p>便利な自動化ですが、説明文とトリガーを読んで、内容が分かるものだけオンにします。講座準備では、まず場所を確認できれば大丈夫です。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/13-skills.svg?v=20260527-moved" alt="Claude Customizeでスキル一覧と詳細を確認する画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">9</span>
+                <h3>Claude Codeの表示設定</h3>
+                <p>コードのテーマ、フォント、表示サイズ、セッション状態の分類を確認します。見た目の好みなので、読みづらい時だけ変更します。</p>
+                <p>作業に直接関わる重要設定ではないため、最初はそのままで大丈夫です。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/08-code-display.svg" alt="Claude Code初期設定の表示設定画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">10</span>
+                <h3>Claude Codeのローカルセッション</h3>
+                <p>ここが一番大事です。Claude Codeがローカルのフォルダで作業する時の権限を確認します。</p>
+                <ul class="plain-list compact-list">
+                  <li><strong>バイパス権限モードを許可</strong>：最初はオフがおすすめです。</li>
+                  <li><strong>デフォルトでリモートコントロールを有効にする</strong>：最初はオフで大丈夫です。</li>
+                  <li><strong>通知を目立たせる</strong>：オンにしておくと完了に気づきやすいです。</li>
+                  <li><strong>ワークツリーの場所</strong>：初期値のままで問題ありません。</li>
+                  <li><strong>プレビュー</strong>：Webページを確認する作業をする時はオンが便利です。</li>
+                </ul>
+                <p class="soft-note">迷ったら、広い権限は渡さず、Claudeに「まず作業内容を説明して」と頼んでから進めます。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/09-code-local.svg" alt="Claude Code初期設定のローカルセッション画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">11</span>
+                <h3>Claude in Chrome</h3>
+                <p>Chrome上でClaudeを使うための設定です。Webページを見ながら相談できる便利な機能なので、使える方は入れておくことをおすすめします。</p>
+                <p>銀行サイト、管理画面、個人情報を扱うページなど、Claudeにアクセスしてほしくないサイトは、<strong>サイトを追加</strong>からブロックしておきます。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/10-chrome.svg" alt="Claude in Chromeの設定画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">12</span>
+                <h3>デスクトップアプリ</h3>
+                <p>一般的なデスクトップ設定では、起動、クイックアクセスショートカット、音声ショートカット、メニューバーを確認します。</p>
+                <p><strong>コンピュータをスリープさせない</strong>は、Claudeに長めの作業を任せる時に便利です。講座準備ではオンになっているか確認しておきます。</p>
+                <p>音声ショートカットは、必要な方だけ使いやすいキーに設定します。使わない場合は「ショートカットなし」のままで大丈夫です。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/11-desktop.svg?v=20260527-desktop-general" alt="Claudeデスクトップアプリの一般的なデスクトップ設定画面" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="setting-card">
+              <div class="setting-copy">
+                <span class="status-pill">13</span>
+                <h3>ブラウザ使用とコンピュータ使用</h3>
+                <p><strong>ブラウザ使用</strong>は、ClaudeがChromeでWebサイトを閲覧・操作できる設定です。便利ですが、操作してほしくないサイトを開いていないか確認しながら使います。</p>
+                <p><strong>コンピュータ使用</strong>は、Claudeが画面を見たり、キーボードやマウス操作を補助したりする強い機能です。必要な時だけ許可し、作業中は画面を確認しながら進めます。</p>
+                <p>Macではアクセシビリティや画面録画の許可が出ることがあります。表示に沿って進め、分からない場合はスクショを残します。</p>
+              </div>
+              <figure class="setting-shot">
+                <img src="./assets/claude-code-initial-settings/12-browser-computer.svg?v=20260527-macos-align" alt="Claudeデスクトップアプリのブラウザ使用とコンピュータ使用の設定画面" loading="lazy" />
+              </figure>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band checklist-band" id="checklist">
+        <div class="section-inner checklist-grid">
+          <div>
+            <p class="eyebrow">最後に確認</p>
+            <h2>Claude Code初期設定チェックリスト</h2>
+            <p>全部を完璧に変える必要はありません。ここまで確認できれば、講座前の準備としては十分です。</p>
+          </div>
+          <ul class="checklist interactive-checklist">
+            <li>
+              <label><input type="checkbox" /> <span><code>AI-X</code> フォルダを作った</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>Claude Codeは選んだフォルダを見に行くと分かった</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>Chat、Cowork、Codeの役割の違いを確認した</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>一般設定で通知とClaudeへの指示を確認した</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>アカウントで見覚えのある端末だけが表示されているか確認した</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>請求と使用量を確認した</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>Claude Codeのローカルセッションで、広い権限を不用意にオンにしないと分かった</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>デスクトップアプリの一般設定で、音声ショートカットとスリープ設定を確認した</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>ブラウザ使用とコンピュータ使用は、画面を確認しながら使うと分かった</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>コネクタは必要なサービスだけ接続し、ツール権限を確認すると分かった</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>スキルは説明文とトリガーを確認してから使うと分かった</span></label>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-band note-band">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">困った時</p>
+            <h2>止まった画面を保存する</h2>
+            <p>設定中に分からない表示やエラーが出た場合は、画面全体のスクリーンショットを撮って保存してください。どのメニューで止まったか分かると確認しやすくなります。</p>
+          </div>
+          <div>
+            <p class="eyebrow">戻る</p>
+            <h2>インストールガイドに戻る</h2>
+            <ul class="plain-list">
+              <li><a href="./claude.html#top">Claude Codeインストールガイド</a></li>
+              <li><a href="./codex.html#top">Codexインストールガイド</a></li>
+              <li><a href="./index.html">Codex / Claude Code準備トップページ</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <span>AI-X Claude Code初期設定ガイド</span>
+        <a href="https://willforward.co.jp/" target="_blank" rel="noreferrer">株式会社ウィルフォワード</a>
+        <a href="./claude.html">Claude Codeインストール</a>
+        <a href="./codex.html">Codexインストール</a>
+        <a href="#top">ページ上部へ戻る</a>
+      </div>
+    </footer>
+  </body>
+</html>
