@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Claude はじめかたガイド（Mac版）| あざみ写真館様</title>
+    <meta
+      name="description"
+      content="あざみ写真館様向け。MacでClaudeを使い始めるための初期設定ガイド。Claude Proの月額契約、Claudeデスクトップアプリのインストール、練習用フォルダでの動作確認までをまとめています。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Claude はじめかたガイドの先頭へ">
+          <span class="brand-mark">Claude</span>
+          <span>はじめかたガイド（Mac版）｜あざみ写真館様</span>
+        </a>
+        <nav class="top-nav" aria-label="ページ内ナビゲーション">
+          <a href="#overview">準備すること</a>
+          <a href="#pro-plan">Pro月額</a>
+          <a href="#mac">インストール</a>
+          <a href="#checklist">チェックリスト</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="intro section-band" id="overview">
+        <div class="section-inner intro-grid">
+          <div class="intro-copy">
+            <p class="eyebrow">あざみ写真館の皆様へ</p>
+            <h1>MacでClaudeを使い始めるための初期設定</h1>
+            <p class="lead">
+              あざみ写真館様は全台Macでご利用のため、このページではMacに絞って、ClaudeをはじめてPCで使うまでの手順をまとめました。ClaudeのProプランを月額で契約し、Claudeデスクトップアプリをインストールして、練習用フォルダで動作確認まで進めます。所要時間は10〜20分ほどです。
+            </p>
+            <p class="lead secondary-lead">
+              手順どおりに進めれば大丈夫です。途中で分からないところが出たら、無理に進めず画面のスクリーンショットを保存して共有してください。研修当日にも一緒に確認します。
+            </p>
+            <div class="action-row" aria-label="セクションへのリンク">
+              <a class="primary-button" href="#mac">インストール手順を見る</a>
+              <a class="secondary-button" href="#pro-plan">Pro月額の確認</a>
+              <a class="secondary-button" href="#checklist">チェックリスト</a>
+            </div>
+          </div>
+          <aside class="prep-panel" aria-labelledby="prep-title">
+            <h2 id="prep-title">準備すること</h2>
+            <ol class="number-list">
+              <li>Claude Proを月額で契約する</li>
+              <li>Claudeにログインできる状態にする</li>
+              <li>Claudeデスクトップアプリをインストールする</li>
+              <li>練習用のフォルダを作る</li>
+              <li>Claudeでフォルダ確認とメモ作成を試す</li>
+            </ol>
+            <p>
+              Claude Codeは、ClaudeデスクトップアプリのCodeタブから使えます。まずはこのページの手順で、アプリを開いてフォルダを確認できるところまで進めれば十分です。
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-band pro-plan-band" id="pro-plan">
+        <div class="section-inner pro-plan-layout">
+          <div>
+            <p class="eyebrow">最初にやること</p>
+            <h2>先にClaude Proを月額で契約する</h2>
+            <p>
+              Claude Codeを使うため、無料プランではなくClaude Proにしてから進めます。プラン画面では <strong>Pro</strong> を選び、請求は年間ではなく <strong>月額</strong> にしてください。
+            </p>
+            <p>
+              <a href="https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan" target="_blank" rel="noreferrer">Claude公式ヘルプ</a>でも、Claude CodeはProまたはMaxプランのサブスクリプションで利用する流れが案内されています。
+            </p>
+            <div class="soft-note important-note">
+              <strong>大事:</strong> 年間プランはまとめて請求されます。画面上部の切り替えで「月間」「月額」になっていることを確認してから「プロプランを取得」を押してください。
+            </div>
+            <ol class="plain-list">
+              <li><a href="https://claude.ai/upgrade" target="_blank" rel="noreferrer">Claudeのアップグレード画面</a>を開く</li>
+              <li>プラン一覧で「Pro」を選ぶ</li>
+              <li>請求切り替えで「月間」または「月額」を選ぶ</li>
+              <li>支払いを完了してから、インストールへ進む</li>
+            </ol>
+          </div>
+
+          <div class="plan-preview" aria-label="Claude Pro月額プランの選択例">
+            <div class="billing-toggle" aria-label="請求周期">
+              <span class="active">月間</span>
+              <span>年間</span>
+            </div>
+            <div class="plan-card-row">
+              <article class="plan-mini-card muted-card">
+                <h3>Free</h3>
+                <p>Claudeを始める</p>
+                <div class="plan-price">$0</div>
+              </article>
+              <article class="plan-mini-card selected-card">
+                <p class="eyebrow">選ぶプラン</p>
+                <h3>Pro</h3>
+                <p>リサーチ、コーディング、整理</p>
+                <div class="plan-price">$22 <span>USD/月</span></div>
+                <div class="plan-cta">プロプランを取得</div>
+                <ul class="feature-list">
+                  <li>Claude Code</li>
+                  <li>Cowork</li>
+                  <li>Researchへのアクセス</li>
+                </ul>
+              </article>
+              <article class="plan-mini-card muted-card">
+                <h3>Max</h3>
+                <p>より高い制限、優先アクセス</p>
+                <div class="plan-price">$110<span>から</span></div>
+              </article>
+            </div>
+            <p class="pricing-note">表示金額や内容は変わる場合があります。画面ではProと月額請求を確認してください。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band account-band">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">事前確認</p>
+            <h2>Claudeアカウントと動作環境</h2>
+            <p>
+              ClaudeデスクトップアプリはMacで利用できます。Claude公式ヘルプでは、MacはmacOS 11以上が案内されています。
+            </p>
+            <p>
+              アプリのインストール後は、普段Claudeで使っているアカウントでサインインします。一度アプリを開き、簡単な依頼を送れるところまで確認してください。
+            </p>
+          </div>
+          <div class="link-panel">
+            <a href="https://claude.ai/" target="_blank" rel="noreferrer">Claude Web版を開く</a>
+            <a href="https://claude.com/download" target="_blank" rel="noreferrer">Claudeデスクトップのダウンロードページを開く</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="mac">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Mac</p>
+            <h2>Mac版セットアップ</h2>
+            <p><a href="https://claude.com/download" target="_blank" rel="noreferrer">Claudeデスクトップのダウンロードページ</a>を開き、macOS版をダウンロードして進めます。</p>
+          </div>
+
+          <div class="steps">
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">1</span>
+                <h3>Claudeをダウンロードする</h3>
+                <p>Claudeデスクトップのダウンロードページを開き、「macOS用をダウンロード」を押します。</p>
+              </div>
+              <figure>
+                <img src="./assets/claude-desktop-guide/01-download-page.jpg" alt="Claudeデスクトップのダウンロードページ" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">2</span>
+                <h3>ダウンロード完了を確認する</h3>
+                <p>ダウンロードフォルダを開き、<code>Claude.dmg</code> が入っていることを確認します。見つかったら、そのファイルを開きます。</p>
+              </div>
+              <figure>
+                <img src="./assets/claude-desktop-guide/02-download-started.jpg" alt="Claudeのダウンロードが完了した画面" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">3</span>
+                <h3>Applicationsフォルダへ入れる</h3>
+                <p>開いた画面でClaudeのアイコンをApplicationsフォルダへドラッグします。これでMacへのインストールは完了です。</p>
+              </div>
+              <figure>
+                <img src="./assets/claude-desktop-guide/03-drag-to-applications.jpg" alt="ClaudeアプリをApplicationsフォルダへ移動する画面" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">4</span>
+                <h3>ApplicationsフォルダからClaudeを開く</h3>
+                <p>Applicationsフォルダに入った <code>Claude.app</code> を開きます。初回はサインインが必要になる場合があります。</p>
+              </div>
+              <figure>
+                <img src="./assets/claude-desktop-guide/04-open-from-launchpad.jpg" alt="ApplicationsフォルダからClaudeを開く画面" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">5</span>
+                <h3>Claudeにログインする</h3>
+                <p>Claudeのログイン画面が開いたら、普段使うアカウントでログインします。Googleアカウントまたはメールアドレスで進めてください。</p>
+              </div>
+              <figure>
+                <img src="./assets/claude-desktop-guide/00-claude-login-common.png" alt="ClaudeのログインページでGoogleまたはメールアドレスを選ぶ画面" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">6</span>
+                <h3>Claudeの画面を確認する</h3>
+                <p>Claudeが開いたら、左側に会話やプロジェクト、中央に入力欄が表示されます。作業は、まず練習用フォルダで試します。</p>
+              </div>
+              <figure>
+                <img src="./assets/claude-desktop-guide/05-claude-first-screen.jpg" alt="Claudeデスクトップアプリの初期画面" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">7</span>
+                <h3>練習用フォルダを作る</h3>
+                <p>Finderでデスクトップを開き、新規フォルダを作成して、分かりやすい名前（例：<code>Claude練習</code>）にします。</p>
+                <div class="soft-note">
+                  <strong>補足:</strong> 下の画面例では <code>AI-X</code> という名前になっていますが、あざみ写真館様では <code>Claude練習</code> など分かりやすい名前で大丈夫です。
+                </div>
+              </div>
+              <figure>
+                <img src="./assets/claude-desktop-guide/06-create-ai-x-folder.png" alt="MacのFinderで練習用フォルダを作る画面" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">8</span>
+                <h3>練習用フォルダを選ぶ</h3>
+                <p>Claudeの左上にある <strong>Chat / Cowork / Code</strong> の中から <strong>Code</strong> を選び、<strong>New session</strong> を開きます。</p>
+                <p><strong>New session</strong> を開いたあと、チャット欄の上部にある「フォルダを追加するマーク」から作業フォルダを選ぶ画面を開きます。先ほど作った練習用フォルダを選びます。最初は空のフォルダで大丈夫です。</p>
+              </div>
+              <div class="figure-stack">
+                <figure>
+                  <img src="./assets/claude-desktop-guide/07-mac-code-new-session-before-folder-image2.png" alt="Mac版Claude CodeでCode、New session、チャット欄上部のフォルダ追加マークを確認する画面" />
+                  <figcaption>Codeを開くと、左側にNew session、チャット欄の上にフォルダを追加するマークが表示されます。この時点では作業フォルダはまだ選ばれていません。</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/claude-desktop-guide/07-mac-folder-add-control-image2.png" alt="Mac版Claude Codeのチャット欄上部にあるフォルダ追加マーク" />
+                  <figcaption>ローカルの右側にある小さなフォルダ追加マークから、作業フォルダを追加できます。</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/claude-desktop-guide/07-select-ai-x-folder.jpg" alt="Macのフォルダ選択画面で練習用フォルダを選ぶ画面" />
+                  <figcaption>フォルダ選択画面が開いたら、デスクトップに作った練習用フォルダを選びます。</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">9</span>
+                <h3>最初の依頼を送る</h3>
+                <p>フォルダを選んだら、下の文章を送ってみてください。</p>
+                <pre><code>このフォルダについて説明してください。まだ何もなければ、空のフォルダだと教えてください。</code></pre>
+              </div>
+              <figure>
+                <img src="./assets/claude-desktop-guide/08-ask-folder-check.jpg" alt="Claudeにフォルダ確認の依頼を入力する画面" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">10</span>
+                <h3>フォルダ確認の返答を見る</h3>
+                <p>Claudeがフォルダの中身を確認し、空のフォルダならその旨を返してくれます。ここまで動けば、アプリの基本動作は確認できています。</p>
+              </div>
+              <figure>
+                <img src="./assets/claude-desktop-guide/09-folder-check-result.jpg" alt="Claudeがフォルダ確認に返答した画面" />
+              </figure>
+            </article>
+
+            <article class="step">
+              <div class="step-copy">
+                <span class="step-number">11</span>
+                <h3>メモ作成を頼む</h3>
+                <p>次に、簡単なメモを作ってもらいます。ここまで送れれば、初期設定の練習は十分です。</p>
+                <pre><code>研修受講用のメモファイルを作成しておいて</code></pre>
+              </div>
+              <figure>
+                <img src="./assets/claude-desktop-guide/10-create-memo-prompt.jpg" alt="Claudeに研修用メモの作成を依頼する画面" />
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band troubleshooting-band">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">うまくいかない時</p>
+            <h2>よくあるつまずきと対処</h2>
+            <p>設定変更が必要そうな場合は、無理に進めずスクリーンショットを保存して共有してください。</p>
+          </div>
+
+          <div class="trouble-grid">
+            <article class="trouble-card">
+              <h3>ダウンロードが見つからない</h3>
+              <p>ブラウザ右上のダウンロード一覧、またはダウンロードフォルダを確認してください。見つからなければ、もう一度公式ページからダウンロードします。</p>
+            </article>
+
+            <article class="trouble-card">
+              <h3>サインインで止まる</h3>
+              <p>ブラウザでClaudeにログインできるか確認し、Claudeアプリを一度終了して開き直してください。</p>
+            </article>
+
+            <article class="trouble-card">
+              <h3>Codeタブが見当たらない</h3>
+              <p>Claude Proの契約が完了しているか、正しいアカウントでログインしているかを確認してください。反映まで少し時間がかかる場合があります。</p>
+            </article>
+
+            <article class="trouble-card">
+              <h3>フォルダ選択が不安</h3>
+              <p>最初はデスクトップの練習用フォルダだけを選びます。お客様情報や社外秘資料が入ったフォルダは、練習では使わないでください。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band checklist-band" id="checklist">
+        <div class="section-inner checklist-grid">
+          <div>
+            <p class="eyebrow">最後に確認</p>
+            <h2>チェックリスト</h2>
+            <p>研修前に、ここまで進んでいるか確認します。</p>
+          </div>
+          <ul class="checklist interactive-checklist">
+            <li>
+              <label><input type="checkbox" /> <span>Claude Proを月額で契約した</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>Claudeにログインできる</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>Claudeデスクトップアプリをインストールした</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>Claudeアプリを開けた</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>練習用フォルダを作成した</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>Claudeで練習用フォルダを確認できた</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> <span>メモの作成を試した</span></label>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-band note-band">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">つまずいた場合に共有するもの</p>
+            <h2>エラーが出た場合</h2>
+            <p>止まった場合は、エラー画面のスクリーンショットを撮って保存してください。</p>
+            <ul class="plain-list">
+              <li>エラー画面のスクリーンショット</li>
+              <li>止まった手順の番号</li>
+              <li>どこまで進めたか</li>
+            </ul>
+          </div>
+          <div>
+            <p class="eyebrow">注意</p>
+            <h2>初回練習はダミー資料で</h2>
+            <p>
+              初回練習では、実際のお客様情報・個人情報・社外秘資料は使わないでください。まずは練習用フォルダやダミー資料で動作確認をしてください。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <span>あざみ写真館様｜Claude はじめかたガイド（Mac版）</span>
+        <a href="https://ainoarukurashi.com/" target="_blank" rel="noreferrer">合同会社AIのある暮らし</a>
+        <a href="#top">ページ上部へ戻る</a>
+      </div>
+    </footer>
+  </body>
+</html>
